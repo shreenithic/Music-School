@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Crescendo Registration Page
+    </title>
+    <style>
+        h1 {
+            color: rgb(90, 89, 172);
+        }
+
+        .bdy {
+            padding: 10px 100px 10px 510px;
+
+        }
+
+        label {
+            font-weight: bolder;
+        }
+
+        .form {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            height: 50%;
+            width: 40%;
+            padding: 30px;
+            background-color: rgb(184, 192, 218);
+            border-radius: 40px;
+
+        }
+
+        input {
+            padding: 4px;
+            border: 1px solid rgb(184, 192, 218);
+            border-radius: 5px;
+        }
+
+        input[type=submit] {
+            text-align: center;
+            background-color: rgb(90, 89, 172);
+            border-radius: 17px;
+            border: 1px solid rgb(90, 89, 172);
+            padding: 10px;
+            width: 100px;
+        }
+
+        .btn {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 align="center">CRESCENDO MUSIC SCHOOL</h1>
+
+    <h3 align="center">Register to our music school below</h3><br>
+
+    <div class="bdy">
+        <div class="form">
+
+            <form>
+                <label> Firstname: </label>
+                <input type="text" name="firstname" size="15" required /> <br> <br>
+
+                <label> Lastname: </label>
+                <input type="text" name="lastname" size="15" /> <br> <br>
+
+                <label> Email: </label>
+                <input type="email" id="email" name="email" required /> <br> <br>
+
+                <label> Phone : </label>
+                <input type="text" name="country code" value="+91" size="2" />
+                <input type="text" name="phone" size="10" required /> <br> <br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required /><br><br>
+
+                <label> Instrument:</label>
+                <select>
+                    <option value="Instrument">select</option>
+                    <option value="Guitar">Guitar</option>
+                    <option value="Piano">Piano</option>
+                    <option value="Violin">Violin</option>
+                    <option value="Drums">Drums</option>
+                    <option value="Flute">Flute</option>
+                    <option value="Veena">Veena</option>
+                    <option value="Vocals">Vocals</option>
+                </select>
+
+                <br><br>
+
+                <label> Lesson Type:</label><br><br>
+                <input type="radio" name="Individual" /> Individual<br>
+                <input type="radio" name="Group" /> Group <br> <br>
+
+                <label for="startdate">Start Date:</label>
+                <input type="date" id="startdate" name="startdate"><br><br>
+
+
+                <label>Convenient Hours:</label><br><br>
+                <input type="radio" value="Morning">Morning
+                <input type="radio" value="Evening">Evening
+                <input type="radio" value="Both">Both
+
+                <br><br>
+
+                <div class="btn">
+                    <input type="submit" value="Submit" />
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
